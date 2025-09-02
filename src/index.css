@@ -640,10 +640,10 @@ html {
   background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 }
 
-/* Responsive design */
+/* Enhanced Mobile Responsive Design */
 @media (max-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   
   .container {
@@ -651,8 +651,212 @@ html {
   }
   
   .btn {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  /* Mobile Navigation */
+  .md\\:flex {
+    display: none !important;
+  }
+  
+  /* Mobile Hero Section */
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  
+  .md\\:text-6xl {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  
+  /* Mobile Grid Adjustments */
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .lg\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Mobile Spacing */
+  .gap-12 {
+    gap: 2rem;
+  }
+  
+  .mt-12 {
+    margin-top: 2rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Mobile Text Sizes */
+  .text-xl {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  /* Mobile Padding */
+  .p-8 {
+    padding: 1.5rem;
+  }
+  
+  .p-6 {
+    padding: 1rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  /* Mobile Form Elements */
+  input, textarea, select {
+    padding: 0.875rem 1rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Mobile Button Groups */
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .sm\\:flex-row {
+    flex-direction: column;
+  }
+  
+  /* Mobile Stats */
+  .flex-wrap {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  /* Mobile App Mockup */
+  .max-w-sm {
+    max-width: 280px;
+  }
+  
+  /* Mobile Background Elements */
+  .w-72 {
+    width: 12rem;
+  }
+  
+  .h-72 {
+    height: 12rem;
+  }
+  
+  .top-20 {
+    top: 2rem;
+  }
+  
+  .left-10 {
+    left: 1rem;
+  }
+  
+  .right-10 {
+    right: 1rem;
+  }
+  
+  .top-40 {
+    top: 4rem;
+  }
+  
+  .-bottom-8 {
+    bottom: -1rem;
+  }
+  
+  .left-20 {
+    left: 2rem;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  .section {
+    padding: 30px 0;
+  }
+  
+  .text-4xl {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  
+  .md\\:text-6xl {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  
+  .text-xl {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .p-8 {
+    padding: 1rem;
+  }
+  
+  .p-6 {
+    padding: 0.75rem;
+  }
+  
+  .gap-8 {
+    gap: 1rem;
+  }
+  
+  .mt-12 {
+    margin-top: 1.5rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Very small mobile adjustments */
+  .max-w-sm {
+    max-width: 240px;
+  }
+  
+  .w-72 {
+    width: 8rem;
+  }
+  
+  .h-72 {
+    height: 8rem;
   }
 }
 
@@ -1428,4 +1632,133 @@ svg:not([fill]) {
 .disabled\:cursor-not-allowed:disabled { cursor: not-allowed; }
 
 /* Border utilities */
-.border-t-transparent { border-top-color: transparent; } 
+.border-t-transparent { border-top-color: transparent; }
+
+/* Mobile Touch Optimizations */
+@media (max-width: 768px) {
+  /* Touch-friendly button sizes */
+  .btn {
+    min-height: 44px; /* iOS recommended touch target */
+    touch-action: manipulation;
+  }
+  
+  /* Touch-friendly links */
+  a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* Better touch targets for navigation */
+  .md\\:hidden button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 12px;
+  }
+  
+  /* Mobile form improvements */
+  input, textarea, select {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Mobile card hover effects - disable on touch devices */
+  .group:hover .group-hover\\:scale-110 {
+    transform: none;
+  }
+  
+  .group:hover .group-hover\\:border-purple-200 {
+    border-color: #e5e7eb;
+  }
+  
+  /* Mobile-specific spacing */
+  .space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+  
+  /* Mobile grid improvements */
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Mobile text improvements */
+  .leading-relaxed {
+    line-height: 1.6;
+  }
+  
+  /* Mobile shadow adjustments */
+  .shadow-xl {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-2xl {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Mobile animation adjustments */
+  .animate-blob {
+    animation-duration: 10s; /* Slower on mobile for better performance */
+  }
+  
+  /* Mobile floating elements - reduce movement */
+  .absolute.-top-4.-right-4,
+  .absolute.-bottom-4.-left-4 {
+    display: none; /* Hide floating elements on mobile for cleaner look */
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .min-h-screen {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  .section {
+    padding: 30px 0;
+  }
+  
+  .text-4xl {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  
+  .md\\:text-6xl {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+/* High DPI mobile displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp rendering on retina displays */
+  .w-12, .h-12 {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Dark mode support for mobile */
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+  /* Add dark mode styles if needed in the future */
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob {
+    animation: none;
+  }
+  
+  .transition-all,
+  .transition-transform,
+  .transition-colors {
+    transition: none;
+  }
+  
+  .hover\\:scale-110:hover {
+    transform: none;
+  }
+} 
