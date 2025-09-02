@@ -7,6 +7,10 @@
       "config": {
         "distDir": "build"
       }
+    },
+    {
+      "src": "api/contact.js",
+      "use": "@vercel/node"
     }
   ],
   "buildCommand": "npm run build",
@@ -20,11 +24,6 @@
       "dest": "/index.html"
     }
   ],
-  "functions": {
-    "api/contact.js": {
-      "maxDuration": 30
-    }
-  },
   "headers": [
     {
       "source": "/api/(.*)",
