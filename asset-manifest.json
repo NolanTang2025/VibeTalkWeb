@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VibeTalkWeb/static/css/main.6a4dd595.css",
+    "main.js": "/VibeTalkWeb/static/js/main.991550b0.js",
+    "index.html": "/VibeTalkWeb/index.html",
+    "main.6a4dd595.css.map": "/VibeTalkWeb/static/css/main.6a4dd595.css.map",
+    "main.991550b0.js.map": "/VibeTalkWeb/static/js/main.991550b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a4dd595.css",
+    "static/js/main.991550b0.js"
+  ]
+}
